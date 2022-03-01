@@ -1,0 +1,299 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 1920px) {
+  body {font-size:85%;}
+ }
+ 
+ @media screen and (min-width: 460px) {
+  body {font-size: 100%;}
+}
+
+.mainmenubtn {
+  /* width: 50px;
+  height: 50px; */
+  position: relative;
+  background:rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  padding:20px;
+  margin-top:60px;
+  margin-left: 180px;
+  z-index: 2;
+}
+.two{
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+  filter:drop-shadow(0 0 3px #fff);
+  animation-name: menu;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes menu{
+  0%{
+    filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 4px #5ff);
+  }
+  100%{
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 12px #5ff) drop-shadow(0 0 15px rgba(30,132,242,0.92) ) drop-shadow(0 0 16px #fff);
+  }
+} 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+.dropdown-child {
+  position: relative;
+  display:none;
+  border-radius: 10px;
+  margin-left: 210px;
+  margin-top: -30px;
+  width: 930px;
+  height: 420px;
+  background-color:rgb(217, 242, 250);
+  min-width: 200px;
+  z-index: 1;
+  /* filter: drop-shadow(0 0 2px #5ff) drop-shadow(0 0 4px #fff); */
+  
+}
+.dropdown-child a {
+  
+  color:rgba(30,132,242,0.92);
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+
+}
+.dropdown-child .prais{
+  position:absolute;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-top:130px; 
+  background: rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 100px;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.dropdown-child .prais:hover{
+  background: #fff;
+  filter: drop-shadow(0 0 5px rgb(0, 122, 156));
+  transform: scale(1.1,1.1);
+}
+.dropdown-child .prais img{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  margin-top: -60px;
+  margin-left: -10px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+.dropdown-child .prais p{
+  margin-top: 50px;
+}
+
+.dropdown-child .whrite{
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 215px;
+  margin-top: 130px;
+  background: rgb(0, 0, 0, 0);
+  width: 100px;
+  height: 100px;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.dropdown-child .whrite:hover{
+  background: #fff;
+  filter: drop-shadow(0 0 5px rgb(0, 122, 156));
+  transform: scale(1.1,1.1);
+}
+.dropdown-child .whrite img{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  margin-top: -60px;
+  margin-left: -10px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+.dropdown-child .whrite p{
+  margin-top: 50px;
+}
+
+.dropdown-child .media{
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 390px;
+  margin-top: 130px;
+  background: rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 100px;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.dropdown-child .media:hover{
+  background: #fff;
+  filter: drop-shadow(0 0 5px rgb(0, 122, 156));
+  transform: scale(1.1,1.1);
+}
+.dropdown-child .media img{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  margin-top: -60px;
+  margin-left: -10px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+.dropdown-child .media p{
+  margin-top: 50px;
+}
+
+.dropdown-child .review{
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 565px;
+  margin-top: 130px;
+  background: rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 100px;
+  font-family:'Cormorant Infant', serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.dropdown-child .review:hover{
+  background: #fff;
+  filter: drop-shadow(0 0 5px rgb(0, 122, 156));
+  transform: scale(1.1,1.1);
+}
+.dropdown-child .review img{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  margin-top: -60px;
+  margin-left: -10px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+.dropdown-child .review p{
+  margin-top: 50px;
+}
+
+.dropdown-child .about{
+  position:absolute;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 740px;
+  margin-top: 130px;
+  background: rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 100px;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.dropdown-child .about:hover{
+  background: #fff;
+  filter: drop-shadow(0 0 5px rgb(0, 122, 156));
+  transform: scale(1.1,1.1);
+}
+.dropdown-child .about img{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  margin-top: -60px;
+  margin-left: -10px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+.dropdown-child .about p{
+  margin-top: 50px;
+}
+
+.dropdown:hover .dropdown-child {
+  display: block;
+}
+
+
+
+.conteiner{
+  position:fixed;
+  justify-content: center;
+  margin-top:75px;
+  margin-left: 25%;
+  transform: rotate(-15deg);
+  
+}
+
+.pen {
+    
+    fill: none;   
+    stroke-width: 18;
+    stroke-linecap:round;
+    stroke-dasharray: 8500;
+    stroke-dashoffset: 8500;
+    animation-duration: 6s;
+    animation-name: draw;
+    animation-iteration-count:1;
+    animation-direction:initial;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+}
+  
+  @keyframes draw {
+    from {
+      stroke-dashoffset: 8500;
+      
+    }
+    to {
+      stroke-dashoffset: 0;
+      
+    } 
+  }
+
+.one{
+      
+      width: 550px;
+      height: 450px;
+      filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 30px rgba(202,228,225,0.42)) drop-shadow(0 0 22px #5ff);
+      animation-name: neon;
+      animation-delay: 6s;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      z-index: 0;
+}
+
+@keyframes neon{
+  0%{
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 30px rgba(202,228,225,0.42)) drop-shadow(0 0 22px #5ff);
+}
+  100%{
+    filter: drop-shadow(0 0 6px rgba(202,228,225,0.92)) drop-shadow(0 0 30px rgba(202,228,225,0.34)) drop-shadow(0 0 12px rgba(30,132,242,0.52)) drop-shadow(0 0 21px rgba(30,132,242,0.92)) drop-shadow(0 0 34px rgba(30,132,242,0.78)) drop-shadow(0 0 54px rgba(30,132,242,0.92));
+  }
+}
